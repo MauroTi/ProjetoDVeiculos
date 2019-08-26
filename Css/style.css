@@ -1,0 +1,478 @@
+* {
+            box-sizing: border-box;
+        }
+        
+        a:link {
+            color: #ffd700;
+			text-decoration: none;
+        }
+        
+        a:visited {
+            color: #ffd700;
+			text-decoration: none;
+        }
+		
+		a:hover{
+			color: #fff;
+			text-decoration: underline;
+		}
+		
+		.amplia:hover{
+				font-size: 18px;
+			
+		}
+		
+        
+		
+		
+        body {
+            margin: 0;
+        }
+        
+        #topo {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 75px;
+            text-align: center;
+        }
+        
+        #logo {
+            margin: -17px 0 0 0;
+            padding: 0 0 0 120px;
+            float: left;
+        }
+        
+        #telefone_topo {
+            font-size: 21px;
+            font-weight: 900;
+            font-family: 'Arimo', sans-serif;
+        }
+        
+        #endereco_topo {
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+        }
+        
+        #endereco_logo {
+            float: right;
+            margin: 0 0 0 0;
+            padding: 15px 120px 0 0;
+        }
+        
+        #menu {
+            margin: 0;
+            padding: 1px 0 0 40%;
+            width: 100%;
+            background-color: #363636;
+            font-size: 22px;
+            font-family: 'Arial Narrow', sans-serif;
+        }
+        
+        li {
+            display: inline;
+            color: #ffd700;
+            margin: 0 30px 0 0;
+        }
+        
+        .carousel input {
+            position: absolute;
+            left: -10000px;
+        }
+        
+        .carousel {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .carousel__stage {
+            overflow: hidden;
+            font-size: 0;
+            white-space: nowrap;
+            width: 100%;
+            height: 100%;
+            transition: text-indent 600ms;
+            position: relative;
+        }
+        
+        .carousel__item {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            text-indent: 0;
+            opacity: 0.6;
+            text-align: center;
+        }
+        
+        .carousel__image {
+            height: 100%;
+            width: auto;
+            display: inline-block;
+        }
+        
+        .carousel__next,
+        .carousel__prev {
+            display: none;
+            position: absolute;
+            top: 20%;
+            color: #363636;
+            background: rgba(255, 255, 255, 0.15);
+            z-index: 1;
+            font-size: 70px;
+            font-weight: 900;
+            font-family: impact, fantasy;
+            padding: 20px;
+            cursor: pointer;
+        }
+        
+        .carousel__prev {
+            left: 0;
+        }
+        
+        .carousel__prev:after {
+            content: ' << ';
+            display: inline-block;
+        }
+        
+        .carousel__next {
+            right: 0;
+        }
+        
+        .carousel__next:after {
+            content: ' >> ';
+            display: inline-block;
+        }
+        
+        #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1),
+        #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) {
+            opacity: 1;
+        }
+        
+        #carousel1:checked ~ .carousel__stage {
+            text-indent: 0;
+        }
+        
+        #carousel2:checked ~ .carousel__stage {
+            text-indent: -100%;
+        }
+        
+        #carousel3:checked ~ .carousel__stage {
+            text-indent: -200%;
+        }
+        
+        #carousel4:checked ~ .carousel__stage {
+            text-indent: -300%;
+        }
+        
+        #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__prev,
+        #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__next,
+        #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__prev {
+            display: block;
+        }
+        
+        #sobre_nos_titulo {
+            margin: 0;
+            padding: 10px 0 0 10%;
+            width: 100%;
+            color: #ffd700;
+            background-color: #363636;
+            font-size: 28px;
+            font-family: 'Arial Narrow', sans-serif;
+        }
+		
+		#nossos_veiculos{
+					margin: 0;
+					padding: 10px 0 0 10%;
+					width: 100%;
+					color: #ffd700;
+					background-color: #363636;
+					font-size: 28px;
+					font-family: 'Arial Narrow', sans-serif;
+					
+			}
+			
+			
+			
+			#vitrine{
+					margin: 0;
+					padding: 0;
+					width: 100%;
+					height: 500px;
+			
+			}
+		
+		#links_titulo {
+            margin: 0;
+            padding: 10px 0 0 10%;
+            width: 100%;
+            color: #ffd700;
+            background-color: #363636;
+            font-size: 26px;
+            font-family: 'Arial Narrow', sans-serif;
+			
+        }
+		
+		#link_container {
+            margin: 0;
+            padding: 10px 16% 30px 16%;
+            width: 100%;
+			font-weight: 530;
+			
+		}
+		
+		#fipe_texto {
+			margin: 0;
+            padding: 0 0 0 10%;
+            width: 50%;
+            color: #363636;
+            background-color: #fff;
+            font-size: 17px;
+            font-family: 'Arimo', sans-serif;
+			text-align: justify;
+			
+			
+		}
+		
+		#fipe_imagem {
+			margin: 0;
+            padding: 6% 0 0 8%;
+            width: 50%;           
+            background-color: #fff;
+			float: right;
+			text-align: center;
+			
+			
+			
+		}
+		
+		
+		#detran_texto {
+			margin: 0;
+            padding: 0 0 10% 10%;
+            width: 50%;
+            color: #363636;
+            background-color: #fff;
+            font-size: 17px;
+            font-family: 'Arial Narrow', sans-serif;
+			text-align: justify;
+			
+			
+		}
+		
+		#detran_imagem {
+			margin: 0;
+            padding: 2% 0 0 8%;
+            width: 50%;
+			
+            background-color: #fff;
+			float: right;
+			text-align: center;
+			
+			
+			
+		}
+		
+		#texto_sobre_nos {
+            margin: 0;
+            padding: 20px 5% 20px 11%;
+            width: 50%;
+            color: #363636;
+            background-color: #fff;
+            font-size: 17px;
+            font-family: 'Arial Narrow', sans-serif;
+			text-align: justify;
+			
+			
+			
+        }
+		
+		#fotos_sobre_nos {
+            margin: 0;
+            padding: 50px 0 0 10%;
+            width: 50%;
+			height: 700px;
+            color: #ffd700;
+            background-color: #fff;
+            font-size: 28px;
+            font-family: 'Arial Narrow', sans-serif;
+			float: right;
+			
+			
+			
+			
+        }
+        
+        #sobre_nos {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+           
+        }
+		
+		#mapa{
+			margin: 0;
+            padding: 0;
+            width: 50%;
+			
+          	float: left;
+		}
+		
+		#formulario_fale_conosco{
+			margin: 0;
+            padding: 0;
+            width: 50%;
+			text-align: left;
+          	float: right;
+			font-weight: 800;
+			background-color: #FFDEAD;
+		}
+		
+		.form{
+			width: 100%;
+			height: 34px;
+			padding: 6px 12px;
+			font-size: 14px;
+			
+			line-height: 1.428571429;
+			color: #555;
+			vertical-align: middle;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			display: block;
+			
+			
+		}
+		
+		#moldura_formulario_cadastro{
+			margin: 0;
+            padding: 5% 10% 5% 10%;
+            width: 100%;
+            height: 600px;
+            background-color: #FFf;
+			
+			
+		}
+		
+		
+		
+		#formulario_cadastro{
+			margin: 0;
+            padding: 2% 12% 2% 12%;
+            width: 100%;
+            height: 700px;
+            background-color: #FFDEAD;
+			
+			
+		}
+		
+		
+		
+		
+        
+        #formulario_rodape {
+            margin: 0;
+            padding: 15px 0 0 0px;
+            width: 100%;
+            height: 70px;
+            background-color: #EEE;
+            color: #363636;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .form-control {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #555;
+            vertical-align: middle;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.428571429;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+		
+	
+        
+        .rodape_fixo {
+            margin: 0;
+            padding: 20px;
+            width: 35%;
+            height: 144px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffd700;
+            font-weight: 700;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border-radius: 27px;
+            font-size: px;
+            text-align: center;
+            column-count: 2;
+        }
+        
+        .rodape {
+            margin: 0;
+            padding: 1px 250px 1px 30px;
+            width: 100%;
+            height: 40px;
+            background-color: #363636;
+            color: #fff;
+            font-weight: 100;
+            font-size: 15px;
+			
+        }
+        
+        #texto_2_colunas_rodape {
+            column-count: 3;
+            margin: 0 0 0 0;
+            padding: 10px 25% 0px 20px;
+            width: 100%;
+            background-color: #363636;
+            color: #fff;
+            font-size: 15px;
+        }
+        
+        #foto_rodape {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #363636;
+        }
+        
+        #uno {}
+        
+        #whats {
+            font-size: 10px;
+        }
